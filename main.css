@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+/* HEADER */
+nav a {
+  text-decoration: none;
+  font-size: 17px;
+  color: black
+}
+.head {
+  height: ;
+  width: 90%;
+  margin: auto;
+}
+header {
+  border-bottom: 2px solid #EEEEEE;
+}
+nav {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.logo {
+  float: left;
+  padding-top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.first {
+  float: left;
+  padding-top: 0;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.right {
+  text-align: right;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.right a {
+  padding-top: 10px;
+}
+nav a {
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/* GRID SECTION */
+.timber {
+  width: 93%;
+  margin: auto;
+  grid-gap: 20px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas: 
+     'box1 box2 box3'
+     'box1 box4 box4';
+}
+.box {
+  background-color: #eeeeee;
+}
+.box1 {
+  height: 600px;
+  grid-area: box1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box2 {
+  grid-area: box2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box4 {
+  grid-area: box4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box3 {
+  grid-area: box3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  width: 93%;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0 15px 0;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:799px) {
+  .mobilehead {
+    display: none;
+  }
+}
+@media (max-width:975px) {
+  .timber {
+    grid-template-areas: 
+       'box1 box1'
+       'box2 box3'
+       'box4 box4';
+  }
+  .box1 {
+    height: 450px;
+  }
+  .box2 {
+    height: 270px;
+  }
+}
+
+@media (max-width:800px) {
+  .head {
+    display: none;
+  }
+  .logo {
+    display: block;
+    float: none;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .first {
+    float: none;
+    display: block;
+    padding-top: 0;
+    position: relative;
+    top: 0;
+    left: 25%;
+    transform: none;
+  }
+  .right {
+    display: block;
+    text-align: center;
+  }
+  .logo2 {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    top: 15px;
+  }
+  .second a {
+    display: block;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  .second a:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+@media (max-width:650px) {
+  .timber {
+    width: 90%;
+    grid-template-areas: 
+       'box1'
+       'box2'
+       'box3'
+       'box4';
+  }
+}
